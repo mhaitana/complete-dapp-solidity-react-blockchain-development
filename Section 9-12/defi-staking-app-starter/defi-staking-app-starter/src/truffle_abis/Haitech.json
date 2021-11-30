@@ -83,19 +83,19 @@
   "sourceMap": "27:238:1:-;;;51:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;100:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;137:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;209:19;180:48;;259:2;235:26;;;;;;;;;;;;;;;;;;;;27:238;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:238:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "27:238:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:238:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;51:42;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;51:42:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;180:48;;;:::i;:::-;;;;;;;;;;;;;;;;;;;235:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;100:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;100:30:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;137:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;137:36:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;51:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;180:48::-;;;;:::o;235:26::-;;;;;;;;;;;;;:::o;100:30::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;137:36::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Haitech {\r\n    string public name = 'Haitech Development';\r\n    string public symbol = 'HTDEV';\r\n    string public developer = 'techtana';\r\n    uint256 public totalSupply = 1000000000000000000;\r\n    uint8 public decimals = 18;\r\n}",
-  "sourcePath": "C:\\Users\\mhait\\Projects\\complete-dapp-solidity-react-blockchain-development\\Section 9\\defi-staking-app-starter\\defi-staking-app-starter\\src\\contracts\\Haitech.sol",
+  "sourcePath": "C:\\Users\\mhait\\Projects\\complete-dapp-solidity-react-blockchain-development\\Section 9-12\\defi-staking-app-starter\\defi-staking-app-starter\\src\\contracts\\Haitech.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Haitech.sol",
     "exportedSymbols": {
       "Haitech": [
-        47
+        182
       ]
     },
-    "id": 48,
+    "id": 183,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 31,
+        "id": 166,
         "literals": [
           "solidity",
           "^",
@@ -111,19 +111,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 47,
+        "id": 182,
         "linearizedBaseContracts": [
-          47
+          182
         ],
         "name": "Haitech",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 34,
+            "id": 169,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 47,
+            "scope": 182,
             "src": "51:42:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -132,7 +132,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 32,
+              "id": 167,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "51:6:1",
@@ -144,7 +144,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4861697465636820446576656c6f706d656e74",
-              "id": 33,
+              "id": 168,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -163,10 +163,10 @@
           },
           {
             "constant": false,
-            "id": 37,
+            "id": 172,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 47,
+            "scope": 182,
             "src": "100:30:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -175,7 +175,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 35,
+              "id": 170,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "100:6:1",
@@ -187,7 +187,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4854444556",
-              "id": 36,
+              "id": 171,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -206,10 +206,10 @@
           },
           {
             "constant": false,
-            "id": 40,
+            "id": 175,
             "name": "developer",
             "nodeType": "VariableDeclaration",
-            "scope": 47,
+            "scope": 182,
             "src": "137:36:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -218,7 +218,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 38,
+              "id": 173,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "137:6:1",
@@ -230,7 +230,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "7465636874616e61",
-              "id": 39,
+              "id": 174,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -249,10 +249,10 @@
           },
           {
             "constant": false,
-            "id": 43,
+            "id": 178,
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
-            "scope": 47,
+            "scope": 182,
             "src": "180:48:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -261,7 +261,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 41,
+              "id": 176,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "180:7:1",
@@ -273,7 +273,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030303030303030303030303030303030",
-              "id": 42,
+              "id": 177,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -292,10 +292,10 @@
           },
           {
             "constant": false,
-            "id": 46,
+            "id": 181,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 47,
+            "scope": 182,
             "src": "235:26:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -304,7 +304,7 @@
               "typeString": "uint8"
             },
             "typeName": {
-              "id": 44,
+              "id": 179,
               "name": "uint8",
               "nodeType": "ElementaryTypeName",
               "src": "235:5:1",
@@ -316,7 +316,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 45,
+              "id": 180,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -334,7 +334,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 48,
+        "scope": 183,
         "src": "27:238:1"
       }
     ],
@@ -345,7 +345,7 @@
       "absolutePath": "project:/src/contracts/Haitech.sol",
       "exportedSymbols": {
         "Haitech": [
-          47
+          182
         ]
       }
     },
@@ -359,7 +359,7 @@
             ".0"
           ]
         },
-        "id": 31,
+        "id": 166,
         "name": "PragmaDirective",
         "src": "0:23:1"
       },
@@ -375,17 +375,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            47
+            182
           ],
           "name": "Haitech",
-          "scope": 48
+          "scope": 183
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 47,
+              "scope": 182,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -397,7 +397,7 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 32,
+                "id": 167,
                 "name": "ElementaryTypeName",
                 "src": "51:6:1"
               },
@@ -414,12 +414,12 @@
                   "type": "literal_string \"Haitech Development\"",
                   "value": "Haitech Development"
                 },
-                "id": 33,
+                "id": 168,
                 "name": "Literal",
                 "src": "72:21:1"
               }
             ],
-            "id": 34,
+            "id": 169,
             "name": "VariableDeclaration",
             "src": "51:42:1"
           },
@@ -427,7 +427,7 @@
             "attributes": {
               "constant": false,
               "name": "symbol",
-              "scope": 47,
+              "scope": 182,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -439,7 +439,7 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 35,
+                "id": 170,
                 "name": "ElementaryTypeName",
                 "src": "100:6:1"
               },
@@ -456,12 +456,12 @@
                   "type": "literal_string \"HTDEV\"",
                   "value": "HTDEV"
                 },
-                "id": 36,
+                "id": 171,
                 "name": "Literal",
                 "src": "123:7:1"
               }
             ],
-            "id": 37,
+            "id": 172,
             "name": "VariableDeclaration",
             "src": "100:30:1"
           },
@@ -469,7 +469,7 @@
             "attributes": {
               "constant": false,
               "name": "developer",
-              "scope": 47,
+              "scope": 182,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -481,7 +481,7 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 38,
+                "id": 173,
                 "name": "ElementaryTypeName",
                 "src": "137:6:1"
               },
@@ -498,12 +498,12 @@
                   "type": "literal_string \"techtana\"",
                   "value": "techtana"
                 },
-                "id": 39,
+                "id": 174,
                 "name": "Literal",
                 "src": "163:10:1"
               }
             ],
-            "id": 40,
+            "id": 175,
             "name": "VariableDeclaration",
             "src": "137:36:1"
           },
@@ -511,7 +511,7 @@
             "attributes": {
               "constant": false,
               "name": "totalSupply",
-              "scope": 47,
+              "scope": 182,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -523,7 +523,7 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 41,
+                "id": 176,
                 "name": "ElementaryTypeName",
                 "src": "180:7:1"
               },
@@ -540,12 +540,12 @@
                   "type": "int_const 1000000000000000000",
                   "value": "1000000000000000000"
                 },
-                "id": 42,
+                "id": 177,
                 "name": "Literal",
                 "src": "209:19:1"
               }
             ],
-            "id": 43,
+            "id": 178,
             "name": "VariableDeclaration",
             "src": "180:48:1"
           },
@@ -553,7 +553,7 @@
             "attributes": {
               "constant": false,
               "name": "decimals",
-              "scope": 47,
+              "scope": 182,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint8",
@@ -565,7 +565,7 @@
                   "name": "uint8",
                   "type": "uint8"
                 },
-                "id": 44,
+                "id": 179,
                 "name": "ElementaryTypeName",
                 "src": "235:5:1"
               },
@@ -582,22 +582,22 @@
                   "type": "int_const 18",
                   "value": "18"
                 },
-                "id": 45,
+                "id": 180,
                 "name": "Literal",
                 "src": "259:2:1"
               }
             ],
-            "id": 46,
+            "id": 181,
             "name": "VariableDeclaration",
             "src": "235:26:1"
           }
         ],
-        "id": 47,
+        "id": 182,
         "name": "ContractDefinition",
         "src": "27:238:1"
       }
     ],
-    "id": 48,
+    "id": 183,
     "name": "SourceUnit",
     "src": "0:265:1"
   },
@@ -609,12 +609,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x273735D10b861214488Fd60d3A8745fA0AA88c3A",
-      "transactionHash": "0x766f7424d6b12549e6d4e1508f1310934e9e3f173d84b1b57853a703f6f7df05"
+      "address": "0xbaa3cafb84Fe0FbC40136F97BC2D2277Dd5d0810",
+      "transactionHash": "0x2e32e39f27ec27600411329b0c547d79c71c25aa9f58a4aeabe7a6db8b417aff"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-24T07:30:29.155Z",
+  "updatedAt": "2021-11-30T08:58:52.106Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
