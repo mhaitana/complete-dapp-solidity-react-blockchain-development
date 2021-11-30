@@ -56,6 +56,7 @@ contract('DecentralBank', ([owner, customer]) => {
         it('rewards tokens for staking', async () => {
             let result
 
+            // stake
             result = await tether.balanceOf(customer)
             assert.equal(result.toString(), tokens('100'), 'customer mock wallet balance before staking')
 
@@ -77,6 +78,21 @@ contract('DecentralBank', ([owner, customer]) => {
             await decentralBank.issueTokens({from: owner})
             
             await decentralBank.issueTokens({from: customer}).should.be.rejected
+
+            // unstake
+            await decentralBank.unstakeTokens({from: customer})
+
+            result = await tether.balanceOf(customer)
+            assert.equal(result.toString(), tokens('100'), 'customer mock wallet balance after staking')
+
+            result = await tether.balanceOf(decentralBank.address)
+            assert.equal(result.toString(), tokens('0'), 'decentral bank mock wallet balance after staking')
+
+            result = await decentralBank.stakingBalance(customer)
+            assert.equal(result.toString(), tokens('0'), 'customer mock staked balance')
+            
+            result = await decentralBank.isStaking(customer)
+            assert.equal(result, false, 'customer is staking status after staking')
         })
     })
 })
