@@ -74,7 +74,7 @@
   "sourceMap": "27:541:2:-;;;126:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;126:58:2;166:10;158:5;;:18;;;;;;;;;;;;;;;;;;27:541;;;;;;",
   "deployedSourceMap": "27:541:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:541:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;387:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;387:178:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;81:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;54:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;267:112;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;267:112:2;;;;;;;;;;;;;;;;;:::i;:::-;;387:178;243:5;;;;;;;;;;;229:19;;:10;:19;;;225:26;;;454:19;487:11;454:45;;510:8;:21;;;532:24;;510:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;510:47:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;510:47:2;;;;250:1;225:26;387:178;:::o;81:36::-;;;;:::o;54:20::-;;;;;;;;;;;;;:::o;267:112::-;243:5;;;;;;;;;;;229:19;;:10;:19;;;225:26;;;362:9;335:24;:36;;;;225:26;267:112;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Migrations {\r\n    address public owner;\r\n    uint public last_completed_migration;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier restricted() {\r\n        if (msg.sender == owner) _;\r\n    }\r\n\r\n    function setCompleted (uint completed) public restricted {\r\n        last_completed_migration = completed;\r\n    }\r\n\r\n    function upgrade(address new_address) public restricted {\r\n        Migrations upgraded = Migrations(new_address);\r\n        upgraded.setCompleted(last_completed_migration);\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\mhait\\Projects\\complete-dapp-solidity-react-blockchain-development\\Section 9-12\\defi-staking-app-starter\\defi-staking-app-starter\\src\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\mhait\\Projects\\complete-dapp-solidity-react-blockchain-development\\Section 9-15\\defi-staking-app-starter\\defi-staking-app-starter\\src\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1469,12 +1469,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xf473278bc655e95419874b5CeEb9Dca8d98103C3",
-      "transactionHash": "0x6333f7e8f321910e831bc83ff9e326d851bd555408199aab80085e74e156c638"
+      "address": "0x9fA54AF480a77f58FeC1F3fCa0CAffD49997262C",
+      "transactionHash": "0xa0aca097dc95b516db453580a8d92a04fae2b4882533d17fbd1d53caa46f09a4"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-11T03:58:08.288Z",
+  "updatedAt": "2021-12-11T10:51:57.209Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
