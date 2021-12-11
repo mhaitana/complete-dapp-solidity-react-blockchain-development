@@ -6,6 +6,7 @@ import Web3 from "web3";
 import Tether from "../truffle_abis/Tether.json";
 import RWD from "../truffle_abis/RWD.json";
 import DecentralBank from "../truffle_abis/DecentralBank.json";
+import Main from "./Main";
 
 class App extends Component {
   constructor(props) {
@@ -83,12 +84,42 @@ class App extends Component {
     })
   }
 
+  stakeTokens = (amount) => {
+    this.setState({ loading: true })
+    this.state.tether.methods.approve(this.state.decentralBank._address, amount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      console.log('approve hash', hash)
+      this.state.decentralBank.methods.depositTokens(amount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+        console.log('depositTokens hash', hash)
+        this.setState({ loading: false })
+      })
+    })
+  }
+
+  unstakeTokens = () => {
+    this.setState({ loading: true })
+    this.state.decentralBank.methods.unstakeTokens().send({ from: this.state.account }).on('transactionHash', (hash) => {
+      console.log('unstakeTokens hash', hash)
+      this.setState({ loading: false })
+    })
+  }
+
   render() {
+    let content = this.state.loading
+      ? <p id='loader' className="text-center" style={{ margin: '30px' }}>Loading...</p>
+      : <Main tetherBalance={this.state.tetherBalance} rwdBalance={this.state.rwdBalance}
+        stakingBalance={this.state.stakingBalance} stakeTokens={this.stakeTokens} unstakeTokens={this.unstakeTokens} />
     return (
       <div>
         <Navbar account={this.state.account} />
-        <div className="text-center"></div>
-
+        <div className="container-fluid mt-5">
+          <div className="row">
+            <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px', minHeight: '100vm'}}>
+              <div>
+                {content}
+              </div>
+            </main>
+          </div>
+        </div>
       </div>
     );
   }
